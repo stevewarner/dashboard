@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	min-height: calc(100vh - 40px);
+	flex-direction: column;
+	background: #000851;
+	background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: lighter;
+    padding: 20px;
+}
+
+body * {
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+
+h1 {
+	font-size: 4rem;
+	font-weight: bolder;
+}
+
+strong {
+	font-weight: normal;
+}
+
+.dashboard {
+	flex: 1;
+	display: flex;
+	flex-flow: row wrap;
+	color: #fff;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+.dashboard > div {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.clock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#time {
+	letter-spacing: .25rem;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+#date {
+	letter-spacing: .25rem;
+	font-size: 2rem;
+	font-weight: normal;
+}
+
+#icon {
+	shape-outside: circle(50%);
+	margin: 2rem;
+}
+
+.svg {
+	fill: #fff;
+	height: 12rem;
+	width: 12rem;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.media {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+.media * {
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media img {
+	transition: padding .5s ease;
+	max-width: 50%;
+	padding: 2em;
+}
+
+.plex {
+	background: #282A2D;
+}
+
+.netflix {
+	background: #221f1f;
+}
+
+.hulu {
+	background: #fff;
+}
+
+.hbo {
+	background: #fff;
+}
+
+.spotify {
+	background: #191414;
+}
+
+.youtube {
+	background: #282828;
+}
+
+@media (max-width: 736px) {
+
+	.media img {
+    max-width: 100%;
+    padding: 1em;
+	}
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
