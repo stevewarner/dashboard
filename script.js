@@ -41,7 +41,7 @@
 
     // weather
     function getWeather(zipcode) {
-    const weatherapi = `http://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&units=imperial&appid=782436f1efbf9653921657dfc46b0564`;
+    const weatherapi = `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&units=imperial&appid=782436f1efbf9653921657dfc46b0564`;
 
     fetch(weatherapi)
 		.then(res => res.json())
